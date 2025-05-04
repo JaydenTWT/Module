@@ -8,7 +8,6 @@
     "content": "manga",
     "icon": "https://nhentai.net/favicon.ico"
   },
-
   "search": {
     "url": "https://nhentai.net/search/?q=%query%",
     "parse": [
@@ -26,7 +25,6 @@
       }
     ]
   },
-
   "item": {
     "url": "https://nhentai.net%url%",
     "parse": [
@@ -39,7 +37,6 @@
       }
     ]
   },
-
   "categories": {
     "url": "https://nhentai.net/",
     "parse": [
