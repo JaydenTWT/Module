@@ -1,11 +1,13 @@
 {
-  "name": "NHentai",
-  "version": "1.0",
-  "author": "",
-  "type": "image",
-  "content": "manga",
-  "icon": "https://nhentai.net/favicon.ico",
-  "nsfw": true,
+  "moduleInfo": {
+    "name": "NHentai",
+    "version": "1.0",
+    "author": "unknown",
+    "type": "image",
+    "nsfw": true,
+    "content": "manga",
+    "icon": "https://nhentai.net/favicon.ico"
+  },
 
   "search": {
     "url": "https://nhentai.net/search/?q=%query%",
