@@ -1,0 +1,54 @@
+{
+  "name": "NHentai",
+  "version": "1.0",
+  "author": "",
+  "type": "image",
+  "content": "manga",
+  "icon": "https://nhentai.net/favicon.ico",
+  "nsfw": true,
+
+  "search": {
+    "url": "https://nhentai.net/search/?q=%query%",
+    "parse": [
+      {
+        "container": ".gallery",
+        "title": ".caption",
+        "url": {
+          "selector": "a",
+          "attribute": "href"
+        },
+        "image": {
+          "selector": "img",
+          "attribute": "data-src"
+        }
+      }
+    ]
+  },
+
+  "item": {
+    "url": "https://nhentai.net%url%",
+    "parse": [
+      {
+        "container": "#thumbnail-container .thumb-container",
+        "image": {
+          "selector": "img",
+          "attribute": "data-src"
+        }
+      }
+    ]
+  },
+
+  "categories": {
+    "url": "https://nhentai.net/",
+    "parse": [
+      {
+        "container": ".tag-container .tag",
+        "title": ".name",
+        "url": {
+          "selector": "a",
+          "attribute": "href"
+        }
+      }
+    ]
+  }
+}
