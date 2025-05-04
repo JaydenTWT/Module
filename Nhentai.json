@@ -1,12 +1,13 @@
 {
   "moduleInfo": {
-    "name": "NHentai",
-    "version": "1.0",
-    "author": "unknown",
-    "type": "image",
-    "nsfw": true,
-    "content": "manga",
-    "icon": "https://nhentai.net/favicon.ico"
+    "moduleName": "NHentai",
+    "moduleAuthor": "unknown",
+    "moduleVersion": "1.0",
+    "moduleLanguage": "ENG",
+    "moduleType": "image",
+    "moduleNSFW": true,
+    "moduleDescription": "Scrapes doujins from NHentai",
+    "moduleIcon": "https://nhentai.net/favicon.ico"
   },
   "search": {
     "url": "https://nhentai.net/search/?q=%query%",
@@ -33,19 +34,6 @@
         "image": {
           "selector": "img",
           "attribute": "data-src"
-        }
-      }
-    ]
-  },
-  "categories": {
-    "url": "https://nhentai.net/",
-    "parse": [
-      {
-        "container": ".tag-container .tag",
-        "title": ".name",
-        "url": {
-          "selector": "a",
-          "attribute": "href"
         }
       }
     ]
